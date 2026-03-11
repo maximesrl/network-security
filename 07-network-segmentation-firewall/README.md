@@ -68,8 +68,8 @@ Objectif :
 53/tcp open  domain
 
 80/tcp open  http
-
 ```
+
 Les services du serveur sont entièrement visibles.
 
 ### Scan Nmap après filtrage
@@ -77,8 +77,8 @@ Les services du serveur sont entièrement visibles.
 22/tcp open  ssh
 
 999 ports filtered
-
 ```
+
 La surface d’attaque est réduite au strict nécessaire.
 
 ## Simulation d’incident
@@ -118,8 +118,8 @@ Invalid user fakeuser from 192.168.10.100
 Accepted publickey for maxserver from 192.168.10.100
 
 sudo session opened for user root
-
 ```
+
 Ces événements permettent de corréler l’activité d’un utilisateur entre plusieurs systèmes.
 
 ## Enseignements
