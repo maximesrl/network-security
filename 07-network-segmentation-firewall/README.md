@@ -19,6 +19,8 @@ L’environnement a été déployé dans un laboratoire virtualisé avec Virtual
 | Ubuntu Desktop | Client utilisateur | 192.168.10.100              |
 | Ubuntu Server  | Serveur cible      | 192.168.20.100              |
 
+![Architecture](Images/pfSense.png)
+
 ## Segmentation réseau
 
 Deux réseaux logiques ont été créés :
