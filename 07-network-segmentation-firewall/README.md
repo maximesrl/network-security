@@ -60,18 +60,23 @@ Objectif :
 ## Analyse de la surface d’attaque
 
 ### Scan Nmap avant filtrage
-`22/tcp open  ssh
+```
+22/tcp open  ssh
+
 53/tcp open  domain
-80/tcp open  http`
 
+80/tcp open  http
 
+```
 Les services du serveur sont entièrement visibles.
 
 ### Scan Nmap après filtrage
-`22/tcp open  ssh
-999 ports filtered`
+```
+22/tcp open  ssh
 
+999 ports filtered
 
+```
 La surface d’attaque est réduite au strict nécessaire.
 
 ## Simulation d’incident
@@ -85,10 +90,15 @@ Un scénario simple a été simulé :
 
 ### Timeline
 
-`Tentatives SSH invalides
+```
+Tentatives SSH invalides
+
 → connexion SSH réussie
+
 → ouverture session utilisateur
-→ utilisation sudo`
+
+→ utilisation sudo
+```
 
 ## Analyse des logs
 
@@ -100,10 +110,14 @@ Sources analysées :
 
 Exemple d’événement :
 
-`Invalid user fakeuser from 192.168.10.100
-Accepted publickey for maxserver from 192.168.10.100
-sudo session opened for user root`
+```
+Invalid user fakeuser from 192.168.10.100
 
+Accepted publickey for maxserver from 192.168.10.100
+
+sudo session opened for user root
+
+```
 Ces événements permettent de corréler l’activité d’un utilisateur entre plusieurs systèmes.
 
 ## Enseignements
